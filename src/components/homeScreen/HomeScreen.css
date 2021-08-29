@@ -1,0 +1,112 @@
+.profile {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.profile .image {
+    margin-left: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.profile .description {
+    margin: 15px 10px;
+}
+
+.profile .description .head {
+    color: grey;
+}
+
+.profile .description .name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.carousel {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.carousel .nav {
+    background-color: none;
+    border: none;
+}
+
+.middle {
+    padding: 20px 20px;
+}
+
+.middle .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.middle .left {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.middle .right {
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: right;
+    color: #4B5ED2;
+}
+
+.middle .listing {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+.middle .listing .single {
+    height: 300px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.middle .listing .single .top {
+    padding: 10px 5px;
+    text-align: left;
+}
+
+.middle .listing .single .top .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.middle .listing .single .top .sub {
+    font-size: 15px;
+    color: grey;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.bottom {
+    margin-top: 30px;
+    bottom: 10px;
+    position: fixed;
+    width: 90%;
+    padding: 10px 20px;
+}
+
+.bottom .plus {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid grey;
+}
+
+.bottom .bar {
+    height: 50px;
+    border-radius: 20px;
+    background-color: teal;
+}
