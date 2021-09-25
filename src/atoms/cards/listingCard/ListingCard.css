@@ -1,0 +1,55 @@
+.single {
+    height: 260px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: grey;
+    margin-right: 10px;
+    margin-top: -100px; 
+    /* there is a mistake over here!!!! */
+}
+
+
+.single .top {
+    padding: 15px 0px 0px 10px;
+    text-align: left;
+}
+
+.single .top .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.single .top .sub {
+    font-size: 12px;
+    /* color: grey; */
+}
+
+.single .mid {
+    height: 150px;
+    width: auto;
+    background-color: indigo;
+}
+
+.single .bottom-single {
+    text-align: left;
+    padding: 0px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+}
+
+.single .bottom-single .price .title {
+    font-size: 12px;
+}
+
+.single .bottom-single .price .price-val {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -18px;
+    /* something is wring here too!! */
+}
+
+.single .bottom-single .rating {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 19px;
+}

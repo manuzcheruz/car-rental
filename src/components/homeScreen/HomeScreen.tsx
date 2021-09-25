@@ -5,6 +5,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import './HomeScreen.css';
 import ListingCard from '../../atoms/cards/listingCard/ListingCard';
+import TopCard from '../../atoms/cards/topCard/TopCard';
 
 function HomeScreen() {
     return (
@@ -25,15 +26,16 @@ function HomeScreen() {
             <div className="carousel">
                 <CarouselProvider
                     naturalSlideWidth={100}
-                    naturalSlideHeight={70}
+                    naturalSlideHeight={80}
                     totalSlides={3}
                 >
                     <Slider>
-                        <Slide className="slider" index={0}>I am the first Slide.</Slide>
-                        <Slide index={1}>I am the second Slide.</Slide>
-                        <Slide index={2}>I am the third Slide.</Slide>
+                        <Slide className="slider" index={0}><TopCard /></Slide>
+                        <Slide index={1}><TopCard /></Slide>
+                        <Slide index={2}><TopCard /></Slide>
                     </Slider>
                     <ButtonBack className="nav">&middot;</ButtonBack>
+                    <ButtonNext className="nav">&middot;</ButtonNext>
                     <ButtonNext className="nav">&middot;</ButtonNext>
                 </CarouselProvider>
             </div>

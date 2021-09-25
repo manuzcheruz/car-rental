@@ -36,12 +36,13 @@
 }
 
 .middle {
-    padding: 20px 20px;
+    margin: 10px 20px;
 }
 
 .middle .title {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .middle .left {
@@ -58,35 +59,10 @@
 }
 
 .middle .listing {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
-}
-
-.middle .listing .single {
-    height: 300px;
-    width: 160px;
-    border-radius: 20px;
-    background-color: blue;
-    margin-right: 10px;
-}
-
-.middle .listing .single .top {
-    padding: 10px 5px;
-    text-align: left;
-}
-
-.middle .listing .single .top .title {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.middle .listing .single .top .sub {
-    font-size: 15px;
-    color: grey;
-    margin-top: 10px;
-    margin-left: 10px;
+    height: 310px;
 }
 
 .bottom {
