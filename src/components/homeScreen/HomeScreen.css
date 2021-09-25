@@ -65,7 +65,7 @@
     height: 310px;
 }
 
-.bottom {
+.bottom-home {
     margin-top: 30px;
     bottom: 10px;
     position: fixed;
@@ -73,16 +73,23 @@
     padding: 10px 20px;
 }
 
-.bottom .plus {
+.bottom-home .plus {
     z-index: 2;
     position: absolute;
     text-align: center;
     border-radius: 50%;
-    border: 5px solid grey;
+    border: 5px solid white;
+    margin-left: 150px;
+    margin-top: -26px;
+    height: 45px;
+    width: 45px;
+    background-color: #314FFB;
 }
 
-.bottom .bar {
+.bottom-home .bar {
     height: 50px;
-    border-radius: 20px;
-    background-color: teal;
+    border-radius: 25px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

@@ -6,6 +6,10 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import './HomeScreen.css';
 import ListingCard from '../../atoms/cards/listingCard/ListingCard';
 import TopCard from '../../atoms/cards/topCard/TopCard';
+import Plus from '../../assets/icons/plus';
+import Home from '../../assets/icons/home';
+import Right from '../../assets/icons/right';
+import BookMark from '../../assets/icons/bookmark';
 
 function HomeScreen() {
     return (
@@ -44,8 +48,15 @@ function HomeScreen() {
                     <div className="left">
                         Luxury Cars
                     </div>
-                    <div className="right">
-                        See More
+                    <div className="right" style={{ display: 'grid', gridTemplateColumns: '1fr 0.2fr' }}>
+                        <div>
+                            See More 
+                        </div>
+                        <div>
+                            <span style={{marginLeft: '5px', marginTop: '10px'}}>
+                                <Right color='#314FFB' height='20' />
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div className="listing">
@@ -55,19 +66,25 @@ function HomeScreen() {
                     <ListingCard />
                 </div>
             </div>
-            <div className="bottom">
+            <div className="bottom-home">
                 <div className="plus">
-                    <span className="icon">
-                        plus
-                    </span>
+                    <div style={{marginTop: '12px'}}>
+                        <span className="icon">
+                            <Plus height='20' color='white' />
+                        </span>
+                    </div>
                 </div>
                 <div className="bar">
-                    <span className="home">
-
-                    </span>
-                    <span className="bookmark">
-                        
-                    </span>
+                    <div style={{marginTop: '7px', marginLeft: '20px'}}>
+                        <span className="home">
+                            <Home color='#314FFB' height='30' />
+                        </span>
+                    </div>
+                    <div>
+                        <span className="bookmark">
+                            <BookMark height='30' />
+                        </span>
+                    </div>
                 </div>
             </div>
         </Aux>
