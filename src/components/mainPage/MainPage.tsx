@@ -1,4 +1,5 @@
 import React from 'react';
+import { Arrow } from '../../assets/icons';
 import Aux from '../../hoc/Aux';
 
 import './MainPage.css';
@@ -18,9 +19,14 @@ return (
         <div className="bottom">
             <div className="button">
                 <button className="btn">
-                    Get Started <span>
-
-                    </span>
+                    <div style={{marginTop: '15px', marginLeft: '15px'}}>
+                        Get Started 
+                    </div>
+                    <div style={{ marginTop: '9px', marginRight: '20px' }}>
+                        <span>
+                            <Arrow height='30' color='white' />
+                        </span>
+                    </div>
                 </button>
             </div>
         </div>

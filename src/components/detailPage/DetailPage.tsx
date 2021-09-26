@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Arrow, ArrowLeft, Bookmark2 } from '../../assets/icons';
 import SpecCard from '../../atoms/cards/specCard/SpecCard';
 import './DetailPage.css';
@@ -9,7 +10,9 @@ function DetailPage() {
                 <div className="right">
                     <div>
                         <span>
-                            <ArrowLeft height='30' color='blue' />
+                            <Link to='/home'>
+                                <ArrowLeft height='30' color='blue' />
+                            </Link>
                         </span>
                     </div>
                 </div>
