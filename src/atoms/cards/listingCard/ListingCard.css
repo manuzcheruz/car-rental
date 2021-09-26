@@ -2,21 +2,20 @@
     height: 260px;
     width: 160px;
     border-radius: 20px;
-    background-color: grey;
-    margin-right: 10px;
-    margin-top: -100px; 
-    /* there is a mistake over here!!!! */
+    background-color: white;
+    margin-right: 10px; 
 }
 
-
 .single .top {
-    padding: 15px 0px 0px 10px;
+    margin-top: 15px;
+    margin-left: 10px;
     text-align: left;
 }
 
 .single .top .title {
     font-size: 18px;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 .single .top .sub {
@@ -27,29 +26,34 @@
 .single .mid {
     height: 150px;
     width: auto;
-    background-color: indigo;
 }
 
 .single .bottom-single {
+    height: 50px;
     text-align: left;
-    padding: 0px 10px 10px 10px;
     display: grid;
     grid-template-columns: 1fr 0.3fr;
 }
 
+.single .bottom-single .price {
+    margin-left: 10px;
+}
+
 .single .bottom-single .price .title {
     font-size: 12px;
+    margin-top: -10px;
+    color: grey;
 }
 
 .single .bottom-single .price .price-val {
     font-size: 18px;
     font-weight: bold;
-    margin-top: -18px;
-    /* something is wring here too!! */
+    margin-top: -10px;
 }
 
 .single .bottom-single .rating {
     font-size: 15px;
     font-weight: bold;
-    margin-top: 19px;
+    margin-top: 25px;
+    color: grey;
 }

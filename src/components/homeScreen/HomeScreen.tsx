@@ -1,5 +1,3 @@
-import React from 'react';
-import Aux from '../../hoc/Aux';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -14,7 +12,7 @@ import Dot from '../../assets/icons/dot';
 
 function HomeScreen() {
     return (
-        <Aux>
+        <div className="home-wrapper">
             <div className="profile">
                 <div className="image">
 
@@ -78,17 +76,17 @@ function HomeScreen() {
                 <div className="bar">
                     <div style={{marginTop: '10px', marginLeft: '20px'}}>
                         <span className="home">
-                            <Home color='#314FFB' height='25' />
+                            <Home color='#314FFB' height='22' />
                         </span>
                     </div>
                     <div style={{ textAlign: 'right', marginRight: '20px', marginTop: '10px'}}>
                         <span className="bookmark">
-                            <BookMark height='25' />
+                            <BookMark height='22' color='grey' />
                         </span>
                     </div>
                 </div>
             </div>
-        </Aux>
+        </div>
     )
 }
 

@@ -10,9 +10,9 @@ function ListingCard() {
                     <div className="title">
                         Audi R8
                     </div>
-                    {/* <div className="sub">
+                    <div className="sub">
                         2019 Full
-                    </div> */}
+                    </div>
                 </div>
                 <div className="mid">
 

@@ -8,6 +8,11 @@
     margin-right: 10px;
 }
 
+.spec-card:hover {
+    background: blue;
+    color: white;
+}
+
 .spec-card .left {
     margin-left: 10px;
     margin-top: 10px;
