@@ -1,4 +1,5 @@
 import React from 'react';
+import { Star } from '../../../assets/icons';
 
 import './ListingCard.css';
 
@@ -27,8 +28,8 @@ function ListingCard() {
                         </div>
                     </div>
                     <div className="rating">
-                        <span>
-
+                        <span style={{marginRight: '3px'}}>
+                            <Star height='13' color='orange' />
                         </span>
                         5.0
                     </div>

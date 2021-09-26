@@ -29,3 +29,7 @@ export {
 export {
     default as Bookmark2
 } from './bookmark2';
+
+export {
+    default as Star
+} from './star';

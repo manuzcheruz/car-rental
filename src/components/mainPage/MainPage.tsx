@@ -1,13 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Arrow } from '../../assets/icons';
-import Aux from '../../hoc/Aux';
 
 import './MainPage.css';
 
 function mainPage() {
-//just need a background picture
 return (
-    <Aux>
+    <div className="main-wrapper">
         <div className="top">
             <div className="title">
                 Rental Car
@@ -16,21 +15,25 @@ return (
                 Find your favourite car with a good price
             </div>
         </div>
+        <div className="main-mid">
+        </div>
         <div className="bottom">
             <div className="button">
-                <button className="btn">
-                    <div style={{marginTop: '15px', marginLeft: '15px'}}>
-                        Get Started 
-                    </div>
-                    <div style={{ marginTop: '9px', marginRight: '20px' }}>
-                        <span>
-                            <Arrow height='30' color='white' />
-                        </span>
-                    </div>
-                </button>
+                <Link to='/home'>
+                    <button className="btn">
+                        <div style={{marginTop: '15px', marginLeft: '15px'}}>
+                            Get Started 
+                        </div>
+                        <div style={{ marginTop: '9px', marginRight: '20px' }}>
+                            <span>
+                                <Arrow height='30' color='white' />
+                            </span>
+                        </div>
+                    </button>
+                </Link>
             </div>
         </div>
-    </Aux>
+    </div>
 )
 }
 
