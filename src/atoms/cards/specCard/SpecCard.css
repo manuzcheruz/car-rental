@@ -1,0 +1,24 @@
+.spec-card {
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    margin-right: 10px;
+}
+
+.spec-card .left {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.spec-card .left .title {
+    color: grey;
+    font-size: 15px;
+}
+
+.spec-card .left .sub {
+    font-size: 20px;
+    font-weight: bold;
+}

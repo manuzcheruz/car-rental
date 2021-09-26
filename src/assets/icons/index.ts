@@ -25,3 +25,7 @@ export {
 export {
     default as Dot
 } from './dot';
+
+export {
+    default as Bookmark2
+} from './bookmark2';

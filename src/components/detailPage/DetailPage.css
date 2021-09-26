@@ -1,0 +1,126 @@
+.wrapper {
+    background: #F6F6F6;
+    height: 100vh;
+    width: 100vw;
+}
+
+.detail-top {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.detail-top .right {
+    margin-left: 20px;
+}
+
+.detail-top .left {
+    margin-left: 110px;
+}
+
+.detail-mid {
+    margin: 20px 20px 20px 20px;
+    height: 280px;
+    width: auto;
+}
+
+.detail-mid .title .main {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.detail-mid .title .sub {
+    font-size: 20px;
+    color: grey;
+}
+
+.spec {
+    margin: 20px 20px 20px 20px;
+    height: 200px;
+}
+
+.spec .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.spec .specs1 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 80px;
+}
+
+.spec .specs1::-webkit-scrollbar {
+    display: none;
+}
+
+.spec .specs2 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 80px;
+}
+
+.spec .specs2::-webkit-scrollbar {
+    display: none;
+}
+
+.price {
+    margin: 20px 0px 0px 0px;
+    height: 120px;
+    margin-left: 20px;
+}
+
+.price .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price .prices {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 80px;
+}
+
+.price .prices::-webkit-scrollbar {
+    display: none;
+}
+
+.total {
+    margin: 20px 20px 20px 20px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+.total .text {
+    margin-left: 10px;
+}
+
+.total .text .main {
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+.total .text .sub {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.total .btn button {
+    border: none;
+    border-radius: 20px;
+    background: blue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    height: 45px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
