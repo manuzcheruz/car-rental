@@ -10,6 +10,7 @@ import Plus from '../../assets/icons/plus';
 import Home from '../../assets/icons/home';
 import Right from '../../assets/icons/right';
 import BookMark from '../../assets/icons/bookmark';
+import Dot from '../../assets/icons/dot';
 
 function HomeScreen() {
     return (
@@ -29,8 +30,8 @@ function HomeScreen() {
             </div>
             <div className="carousel">
                 <CarouselProvider
-                    naturalSlideWidth={100}
-                    naturalSlideHeight={80}
+                    naturalSlideWidth={110}
+                    naturalSlideHeight={90}
                     totalSlides={3}
                 >
                     <Slider>
@@ -38,9 +39,9 @@ function HomeScreen() {
                         <Slide index={1}><TopCard /></Slide>
                         <Slide index={2}><TopCard /></Slide>
                     </Slider>
-                    <ButtonBack className="nav">&middot;</ButtonBack>
-                    <ButtonNext className="nav">&middot;</ButtonNext>
-                    <ButtonNext className="nav">&middot;</ButtonNext>
+                    <ButtonBack className="nav"><span><Dot color='blue' height='7' /></span></ButtonBack>
+                    <ButtonNext className="nav"><span><Dot color='grey' height='7' /></span></ButtonNext>
+                    <ButtonNext className="nav"><span><Dot color='grey' height='7' /></span></ButtonNext>
                 </CarouselProvider>
             </div>
             <div className="middle">
@@ -75,14 +76,14 @@ function HomeScreen() {
                     </div>
                 </div>
                 <div className="bar">
-                    <div style={{marginTop: '7px', marginLeft: '20px'}}>
+                    <div style={{marginTop: '10px', marginLeft: '20px'}}>
                         <span className="home">
-                            <Home color='#314FFB' height='30' />
+                            <Home color='#314FFB' height='25' />
                         </span>
                     </div>
-                    <div>
+                    <div style={{ textAlign: 'right', marginRight: '20px', marginTop: '10px'}}>
                         <span className="bookmark">
-                            <BookMark height='30' />
+                            <BookMark height='25' />
                         </span>
                     </div>
                 </div>

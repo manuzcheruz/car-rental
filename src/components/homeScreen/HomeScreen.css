@@ -93,3 +93,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.carousel .nav {
+    background: white;
+    border-radius: 50%;
+}
+
+/* .carousel .nav span {
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background: black;
+} */

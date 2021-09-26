@@ -1,5 +1,5 @@
 .top-card {
-    background-color: indigo;
+    /* background-color: indigo; */
     height: 100%;
     width: 100%;
 }
@@ -7,31 +7,36 @@
 .top-card .image {
     height: 160px;
     width: auto;
-    background-color: red;
+    /* background-color: red; */
 }
 
-.top-card .bottom {
-    height: 50px;
-    width: 100px;
+.top-card .bottom-top {
+    height: 72px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
     /* padding: 5px; */
-    background-color: green;
+    border-radius: 15px;
+    box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
-.top-card .bottom .body {
+.top-card .bottom-top .body {
     display: grid;
     grid-template-columns: 1fr 0.2fr;
 }
 
-.top-card .bottom .body .text {
+.top-card .bottom-top .body .text {
     text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.top-card .bottom .body .text .title {
+.top-card .bottom-top .body .text .title {
     font-size: 20px;
     font-weight: bold;
 }
 
-.top-card .bottom .body .text .sub {
+.top-card .bottom-top .body .text .sub {
     font-size: 15px;
     color: grey;
 }
