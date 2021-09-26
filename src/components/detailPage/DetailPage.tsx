@@ -1,7 +1,54 @@
 import { Link } from 'react-router-dom';
 import { Arrow, ArrowLeft, Bookmark2 } from '../../assets/icons';
-import SpecCard from '../../atoms/cards/specCard/SpecCard';
+import SpecCard, { SpecCardProps } from '../../atoms/cards/specCard/SpecCard';
 import './DetailPage.css';
+import nissan from '../../assets/images/nissan.png';
+
+const specData: SpecCardProps[] = [
+    {
+        spec: 'Color',
+        val: 'Yellow',
+        color: 'yellow'
+    },
+    {
+        spec: 'Gearbox',
+        val: 'Automatic'
+    },
+    {
+        spec: 'Year',
+        val: '2020'
+    }
+]
+
+const specData2: SpecCardProps[] = [
+    {
+        spec: 'Seat',
+        val: '4'
+    },
+    {
+        spec: 'Model',
+        val: 'Turbo S'
+    },
+    {
+        spec: 'Type',
+        val: 'Full'
+    }
+]
+
+const priceData: SpecCardProps[] = [
+    {
+        spec: '12 Months',
+        val: '$7200'
+    },
+    {
+        spec: '6 Months',
+        val: '$3100'
+    },
+    {
+        spec: '2 Months',
+        val: '$1200'
+    }
+]
 
 function DetailPage() {
     return (
@@ -27,14 +74,14 @@ function DetailPage() {
             <div className="detail-mid">
                 <div className="title">
                     <div className="main">
-                        Chevrolete
+                        Nissan GT-R
                     </div>
                     <div className="sub">
-                        Camaro
+                        565 HP
                     </div>
                 </div>
                 <div className="image">
-
+                    <img style={{marginTop: '55px'}} alt='' src={nissan} height='150' width='100%' />
                 </div>
             </div>
             <div className="spec">
@@ -42,16 +89,18 @@ function DetailPage() {
                     Specifications
                 </div>
                 <div className="specs1">
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
+                    {specData.map((el, i) => {
+                        return (
+                            <SpecCard key={i} {...el} />
+                        )
+                    })}
                 </div>
                 <div className="specs2">
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
+                    {specData2.map((el, i) => {
+                        return (
+                            <SpecCard key={i} {...el} />
+                        )
+                    })}
                 </div>
             </div>
             <div className="price">
@@ -59,10 +108,11 @@ function DetailPage() {
                     Price
                 </div>
                 <div className="prices">
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
-                    <SpecCard spec='Color' val='Red' />
+                    {priceData.map((el, i) => {
+                        return (
+                            <SpecCard key={i} {...el} />
+                        )
+                    })}
                 </div>
             </div>
             <div className="total">

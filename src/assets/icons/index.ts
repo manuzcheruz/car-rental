@@ -7,7 +7,7 @@ export {
 } from './arrow';
 
 export {
-    default as Bookmark
+    default as BookMark
 } from './bookmark';
 
 export {
@@ -33,3 +33,7 @@ export {
 export {
     default as Star
 } from './star';
+
+export {
+    default as User
+} from './user';

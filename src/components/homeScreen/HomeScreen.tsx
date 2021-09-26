@@ -4,38 +4,99 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import './HomeScreen.css';
 import ListingCard from '../../atoms/cards/listingCard/ListingCard';
 import TopCard from '../../atoms/cards/topCard/TopCard';
-import Plus from '../../assets/icons/plus';
-import Home from '../../assets/icons/home';
-import Right from '../../assets/icons/right';
-import BookMark from '../../assets/icons/bookmark';
-import Dot from '../../assets/icons/dot';
+import { User, Dot, BookMark, Right, Home, Plus } from '../../assets/icons';
+import ferari from '../../assets/images/ferari.png';
+import lambo1 from '../../assets/images/ford.png'
+import nissan from '../../assets/images/nissan.png';
+
+export interface ListingProps {
+    name: string;
+    year: string;
+    image: string;
+    rating: string;
+    amaount: string;
+}
+
+const listingData: ListingProps[] = [
+    {
+        name: 'Ferari',
+        year: '2019 Full',
+        image: ferari,
+        rating: '4.8',
+        amaount: '$600'
+    },
+    {
+        name: 'Nissan',
+        year: '2020 Full',
+        image: nissan,
+        rating: '5.0',
+        amaount: '$700'
+    },
+    {
+        name: 'Ford',
+        year: '2017 Full',
+        image: lambo1,
+        rating: '4.6',
+        amaount: '$550'
+    }
+]
+
+export interface SlideDataProps {
+    image: string;
+    name: string;
+    price: string;
+}
+
+const slideData: SlideDataProps[] = [
+    {
+        image: nissan,
+        name: 'Nissan GT-R',
+        price: '$700 Per Month'
+    },
+    {
+        image: ferari,
+        name: 'Ferari',
+        price: '$600 Per Month'
+    },
+    {
+        image: lambo1,
+        name: 'Ford',
+        price: '$550 Per Month'
+    }
+]
 
 function HomeScreen() {
     return (
         <div className="home-wrapper">
             <div className="profile">
                 <div className="image">
-
+                    <div style={{marginTop: '7px', marginLeft: '12px'}}>
+                        <span>
+                            <User color='grey' height='30' />
+                        </span>
+                    </div>
                 </div>
                 <div className="description">
                     <div className="head">
                         Welcome
                     </div>
                     <div className="name">
-                        Jasmine Moreno
+                        Jazmine Moreno
                     </div>
                 </div>
             </div>
             <div className="carousel">
                 <CarouselProvider
                     naturalSlideWidth={110}
-                    naturalSlideHeight={90}
+                    naturalSlideHeight={85}
                     totalSlides={3}
                 >
                     <Slider>
-                        <Slide className="slider" index={0}><TopCard /></Slide>
-                        <Slide index={1}><TopCard /></Slide>
-                        <Slide index={2}><TopCard /></Slide>
+                        {slideData.map((el, i) => {
+                            return (
+                                <Slide className="slider" key={i} index={i}><TopCard {...el} /></Slide>
+                            )
+                        })}
                     </Slider>
                     <ButtonBack className="nav"><span><Dot color='blue' height='7' /></span></ButtonBack>
                     <ButtonNext className="nav"><span><Dot color='grey' height='7' /></span></ButtonNext>
@@ -59,10 +120,11 @@ function HomeScreen() {
                     </div>
                 </div>
                 <div className="listing">
-                    <ListingCard />
-                    <ListingCard />
-                    <ListingCard />
-                    <ListingCard />
+                    {listingData.map((el, i) => {
+                        return (
+                            <ListingCard {...el} key={i} />
+                        )
+                    })}
                 </div>
             </div>
             <div className="bottom-home">
